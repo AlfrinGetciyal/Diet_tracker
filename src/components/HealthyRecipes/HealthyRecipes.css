@@ -1,0 +1,388 @@
+.healthy-recipes-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.page-description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Preferences Section */
+.preferences {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.goal-selection,
+.filter-options {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.goal-selection h2,
+.filter-options h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.goal-dropdown {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.filter-label input {
+  margin-right: 10px;
+}
+
+.search-btn {
+  background-color: #476381;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Recipe Cards Section */
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Shared styling for all recipe images */
+.recipe-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Section */
+.recipe-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 7px;
+}
+
+.recipe-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.recipe-calories,
+.recipe-cooking-time,
+.recipe-difficulty,
+.recipe-meal-type {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 2px;
+}
+
+/* Styling for Recipe Description */
+.recipe-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Styling for Ingredients and Steps Headings */
+.recipe-info h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Styling for Ingredients and Steps Lists */
+.recipe-info ul,
+.recipe-info ol {
+  margin: 0 0 8px 20px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.recipe-info li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.view-recipe-btn,
+.back-btn {
+  background-color: #476381;
+  color: white;
+  padding: 10px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.view-recipe-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Back Button Styling */
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* No Recipes Message */
+.no-recipes {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Specific styling for Keto Chicken Salad image */
+.keto-chicken-salad img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.keto-chicken-salad img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.recipes-headlines {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Headline Container */
+.recipes-headline-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.recipes-headline {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Diet Food Gallery */
+.diet-food-gallery {
+  margin-top: 40px;
+}
+
+.diet-food-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.food-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.food-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.food-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.food-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.food-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.food-category {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.food-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Food Details */
+.food-details {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.food-details .food-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.food-details .food-info {
+  max-width: 500px;
+}
+
+.food-details .food-info h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.food-details .food-info ul,
+.food-details .food-info ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.food-details .food-info li {
+  margin-bottom: 5px;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Search Bar */
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-select {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.search-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
